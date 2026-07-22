@@ -28,8 +28,8 @@ To optimize runtime performance during key generation, candidates undergo a two-
 *   **Probabilistic Verification:** Surviving candidates are subjected to a rigorous 20-round Miller-Rabin Primality Test, minimizing the probability of a composite number passing as prime to less than $4^{-20}$ ($9.09 \times 10^{-13}$).
 
 ### 3. High-Precision Mathematical Optimization
-*   **Modular Multiplicative Inverse:** Solved efficiently using a custom implementation of the Extended Euclidean Algorithm to calculate the private exponent ($d$) relative to Euler's totient ($\phi(n)$).
-*   **Modular Exponentiation:** Utilizes square-and-multiply bitwise operations via Python's built-in 3-argument `pow(base, exp, mod)` function, maintaining an efficient time complexity of $O(\log \text{exp})$ and preventing memory overflows.
+*   **Modular Multiplicative Inverse:** Solved efficiently using a custom implementation of the Extended Euclidean Algorithm to calculate the private exponent $d$ relative to Euler's totient $\phi(n)$.
+*   **Modular Exponentiation:** Utilizes square-and-multiply bitwise operations via Python's built-in 3-argument `pow(base, exp, mod)` function, maintaining an efficient time complexity of $O(\log \text{\ exp})$ and preventing memory overflows.
 
 ### 4. End-to-End UTF-8 Byte Serialization
 To enable the processing of both raw numeric payloads and alphanumeric text strings, the engine implements a bidirectional byte serialization pipeline using big-endian byte-order mapping:
