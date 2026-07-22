@@ -46,7 +46,7 @@ $$\text{String Data} \longrightarrow \text{UTF-8 Bytes} \longrightarrow \text{Hi
 ### Installation & Execution
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/aryanb-95/RSA-Algorithm-Python
    cd rsa-cryptosystem
    ```
 
